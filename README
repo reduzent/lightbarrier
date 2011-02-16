@@ -1,0 +1,27 @@
+Light barriers with Arduino
+===========================
+
+The .pde files found in this repository are arduino programs that
+are supposed to run on an arduino board with attached IR-LEDs on
+the outputs and IR-transistors (with the proper circuitry) on the
+analog inputs.
+
+The software detects if the light beam between the corresponding
+IR-LED/IR-transistor pair is interrupted. A change of state of any 
+pair is written to the serial port (a.k.a USB).
+
+The Pd patches show how two such light barriers can be used to detect
+the direction of a passing object.
+
+
+When using standard IR-LEDs, the whole setup can be powered solely
+by the USB port. No external power supply needed.
+
+
+TODO:
+ * proper documentation
+ * clean-up of Pd patches
+ * clean-up of arduino code
+ * provide circuits for LED driver and transistors
+
+
